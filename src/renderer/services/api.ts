@@ -54,6 +54,7 @@ const mockConfig: AppConfig = {
   switchDelay: 250,
   switchDoubleTap: 0,
   autoStartDaemon: false,
+  tlsEnabled: false,
   theme: 'light'
 };
 

@@ -75,6 +75,7 @@ export interface AppConfig {
   switchDelay: number;
   switchDoubleTap: number;
   autoStartDaemon: boolean;
+  tlsEnabled: boolean;
   theme: 'light' | 'dark' | 'system';
 }
 

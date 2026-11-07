@@ -264,6 +264,22 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
                     Helps prevent third-party Windows apps from interfering with mouse input captures.
                   </div>
                 </div>
+
+                <div className="form-check form-switch mb-3">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="tlsCheck"
+                    checked={formData.tlsEnabled}
+                    onChange={(e) => handleChange('tlsEnabled', e.target.checked)}
+                  />
+                  <label className="form-check-label fw-bold small" htmlFor="tlsCheck">
+                    TLS Encryption
+                  </label>
+                  <div className="small text-muted">
+                    Disabled by default for seamless plug-and-play sharing on your local Wi-Fi.
+                  </div>
+                </div>
               </div>
 
               <div className="col-md-6">
